@@ -15,3 +15,5 @@ function count(para){
 }
   
   console.log(count(ageOfDogs));
+
+
