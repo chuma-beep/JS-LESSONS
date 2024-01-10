@@ -68,24 +68,24 @@
 
 // Consider a class Person with the following characteristics:
 
-// The Person class has a constructor that takes name and age as parameters and initializes these properties.
-// There is a method called greet that logs a greeting message, including the person's name.
-// Implement a static method called compareAge that takes two Person objects and compares their ages. It should return a message indicating which person is older or if they are the same age.
-// Now, use this Person class to create two instances and demonstrate the functionality of the greet method and the compareAge static method.
+// // The Person class has a constructor that takes name and age as parameters and initializes these properties.
+// // There is a method called greet that logs a greeting message, including the person's name.
+// // Implement a static method called compareAge that takes two Person objects and compares their ages. It should return a message indicating which person is older or if they are the same age.
+// // Now, use this Person class to create two instances and demonstrate the functionality of the greet method and the compareAge static method.
 
 
 
-class Person{
-    constructor(){
-        this.name = name;
-        this.age = age;
-    }
+// class Person{
+//     constructor(){
+//         this.name = name;
+//         this.age = age;
+//     }
    
-  
+      
 
-    compareAge(){
+//     compareAge(){
              
-    }
+//     }
 
 
 
