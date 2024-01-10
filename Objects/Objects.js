@@ -100,4 +100,47 @@
 //it has add, delete and has methods. 
 //it's constructor creates an empty group 'add'. but only if it's not already a menmber.
 //'add' adds a value to the group 
-//delte removes it's arguement from the grup (if it was a member of the group)
+//delete removes it's arguement from the grup (if it was a member of the group)
+
+
+
+//group
+class Group{
+    //create empty group
+    constructor(){
+       this.emptyGroup = []
+    }
+
+    //add value 
+    add(value){
+      if(!this.has(value)){
+        this.members.push(value);
+      }
+    }
+
+    //deletes value
+    delete(value){
+        this.members = this.filter(v => v !== value);
+    }
+
+    has(value){
+     this.members.includes(value);
+    }
+
+    static from(collection){
+        let group
+    }
+
+
+}
+
+
+let group = Group.from([10, 20]);
+console.log(group.has(10));
+// → true
+console.log(group.has(30));
+// → false
+group.add(10);
+group.delete(10);
+console.log(group.has(10));
+// → false
