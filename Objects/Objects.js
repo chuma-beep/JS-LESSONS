@@ -89,20 +89,8 @@
 
 
 
+//     greet(salutaions){
+//         console.log(`hello ${'name'} + I am ${'age'}`)
+//          }
 
-
-
-
-
-
-
-
-
-
-
-
-    greet(salutaions){
-        console.log(`hello ${'name'} + I am ${'age'}`)
-         }
-
-}
+// }
