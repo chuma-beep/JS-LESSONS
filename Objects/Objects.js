@@ -94,3 +94,10 @@
 //          }
 
 // }
+
+
+//group class challenge
+//it has add, delete and has methods. 
+//it's constructor creates an empty group 'add'. but only if it's not already a menmber.
+//'add' adds a value to the group 
+//delte removes it's arguement from the grup (if it was a member of the group)
