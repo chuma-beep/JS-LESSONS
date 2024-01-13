@@ -104,8 +104,60 @@
 
 
 
-//group
-class Group{
+// //group
+// class Group{
+//     //create empty group
+//     constructor(){
+//        this.emptyGroup = []
+//     }
+
+//     //add value 
+//     add(value){
+//       if(!this.has(value)){
+//         this.emptyGroup.push(value)
+//       }
+//     }
+
+//     //deletes value
+//     delete(value){
+//         this.emptyGroup = this.filter(v => v !== value)
+//     }
+
+//     has(value){
+//      this.emptyGroup.includes(value)
+//     }
+//    //static
+//     static from(collection){
+//         let group = new Group
+//         for (let value of collection){
+//             group.add(value)
+//         }
+//         return group
+//     }
+
+
+// }
+
+
+// let group = Group.from([10, 20])
+// console.log(group.has(10))
+// // → true
+// console.log(group.has(30))
+// // → false
+// group.add(10)
+// group.delete(10)
+// console.log(group.has(10))
+// // → false
+
+
+
+
+
+
+
+
+// iterable Groups
+class GroupIterator{
     //create empty group
     constructor(){
        this.emptyGroup = []
@@ -114,17 +166,17 @@ class Group{
     //add value 
     add(value){
       if(!this.has(value)){
-        this.members.push(value)
+        this.emptyGroup.push(value)
       }
     }
 
     //deletes value
     delete(value){
-        this.members = this.filter(v => v !== value)
+        this.emptyGroup = this.filter(v => v !== value)
     }
 
     has(value){
-     this.members.includes(value)
+     this.emptyGroup.includes(value)
     }
    //static
     static from(collection){
@@ -148,3 +200,10 @@ group.add(10)
 group.delete(10)
 console.log(group.has(10))
 // → false
+
+
+
+
+
+
+
