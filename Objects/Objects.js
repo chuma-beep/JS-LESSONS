@@ -156,39 +156,38 @@
 
 
 
-// iterable Groups
-class GroupIterator{
-    //create empty group
-    constructor(){
-       this.emptyGroup = []
-    }
+// // iterable Groups
+// class GroupIterator{
+//     //create empty group
+//     constructor(){
+//        this.emptyGroup = []
+//     }
 
-    //add value 
-    add(value){
-      if(!this.has(value)){
-        this.emptyGroup.push(value)
-      }
-    }
+//     //add value 
+//     add(value){
+//       if(!this.has(value)){
+//         this.emptyGroup.push(value)
+//       }
+//     }
 
-    //deletes value
-    delete(value){
-        this.emptyGroup = this.filter(v => v !== value)
-    }
+//     //deletes value
+//     delete(value){
+//         this.emptyGroup = this.filter(v => v !== value)
+//     }
 
-    has(value){
-     this.emptyGroup.includes(value)
-    }
-   //static
-    static from(collection){
-        let group = new Group
-        for (let value of collection){
-            group.add(value)
-        }
-        return group
-    }
+//     has(value){
+//      this.emptyGroup.includes(value)
+//     }
+//    //static
+//     static from(collection){
+//         let group = new Group
+//         for (let value of collection){
+//             group.add(value)
+//         }
+//         return group
+//     }
 
-
-}
+// }
 
 
 let group = Group.from([10, 20])
