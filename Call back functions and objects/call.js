@@ -13,13 +13,13 @@ let addArrow = (num1, num2) => {
     return num1 + num2;
 }
 
-console.log(typeof addArrow);
+//console.log(typeof addArrow);
 
 // short arrowfucntion -> one liners // these are common when we talk about/use the call back function
 let addOneliner = (num1, num2) => (num1 == undefined || num2 == undefined) ? "Please provide two numbers" : num1 + num2;
 
 let val = addOneliner();
-console.log(val);
+//console.log(val);
 
 
 // const UpperCase = (name)=> name.toUppercase()
@@ -32,14 +32,20 @@ const UpperCase = (name) =>{
 
 //layer of defence 
 if (typeof num1 === 'string' || typeof num2 === 'string') {
-    console.log('I can only add two numbers');
+    //console.log('I can only add two numbers');
 
      //return 
      throw new Error('impossible')
 }
 
 
+let array = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+console.log(array.length); 
+console.log(array[0]);
 
+//call back functions
+let value = addOneliner();
+console.log(value);
 
 
 
