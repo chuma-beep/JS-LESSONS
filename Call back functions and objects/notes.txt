@@ -1,0 +1,39 @@
+1. Array.prototype.push(): Adds one or more elements to the end of an array and returns the new length of the array.
+
+2. Array.prototype.pop(): Removes the last element from an array and returns that element.
+
+3. Array.prototype.shift(): Removes the first element from an array and returns that removed element.
+
+4. Array.prototype.unshift(): Adds one or more elements to the front of an array and returns the new length of the array.
+
+5. Array.prototype.slice(): Returns a shallow copy of a portion of an array into a new array object.
+
+6. Array.prototype.splice(): Changes the contents of an array by removing or replacing existing elements and/or adding new elements in place.
+
+7. Array.prototype.map(): Creates a new array with the results of calling a provided function on every element in the calling array.
+
+8. Array.prototype.filter(): Creates a new array with all elements that pass the test implemented by the provided function.
+
+9. Array.prototype.reduce(): Applies a function against an accumulator and each element in the array (from left to right) to reduce it to a single value.
+
+10. Array.prototype.forEach(): Executes a provided function once for each array element.
+
+11. Array.prototype.sort(): Sorts the elements of an array in place and returns the array.
+
+12. Array.prototype.reverse(): Reverses the order of the elements of an array in place. (First becomes the last, last becomes first.)
+
+13. Array.prototype.join(): Joins all elements of an array into a string.
+
+14. Array.prototype.find(): Returns the value of the first element in the array that satisfies the provided testing function.
+
+15. Array.prototype.findIndex(): Returns the index of the first element in the array that satisfies the provided testing function.
+
+16. Array.prototype.every(): Tests whether all elements in the array pass the test implemented by the provided function.
+
+17. Array.prototype.some(): Tests whether at least one element in the array passes the test implemented by the provided function.
+
+18. Array.prototype.includes(): Determines whether an array includes a certain value among its entries.
+
+19. Array.prototype.concat(): Used to merge two or more arrays.
+
+20. Array.prototype.flat(): Creates a new array with all sub-array elements concatenated into it recursively up to the specified depth.
