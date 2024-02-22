@@ -37,3 +37,12 @@
 19. Array.prototype.concat(): Used to merge two or more arrays.
 
 20. Array.prototype.flat(): Creates a new array with all sub-array elements concatenated into it recursively up to the specified depth.
+
+
+
+PLEASE CHECK THE FOLLOWING
+    .1 - setTimeout()
+    .2 - setInterVal()
+    .3 - clearTimeout()
+    .4 - clearInterval()
+ 
