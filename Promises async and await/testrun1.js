@@ -59,21 +59,27 @@
 //     })
 
 
-///create a promise 
-const promise = new Promise(function(resolve, reject) {
- resolve('I FIRED');
- reject(new Error('Promise  rejected'));
-})
+// ///create a promise 
+// const promise = new Promise(function(resolve, reject) {
+//  resolve('I FIRED');
+//  reject(new Error('Promise  rejected'));
+// })
 
-function testPromise(){
-        return promise.catch(error => {
-            console.log(res);
-        }).catch(error => {
-        console.log(error.message);
-    })
-}
+// function testPromise() {
+//     return promise.catch(error =>
+//     {
+//    console.log(error.message)
+//     })
+    
+// }
 
-testPromise();
+// testPromise();
+
+
+
+
+
+
 
 
 ///follow these steps to understand what setemi did
@@ -89,4 +95,52 @@ function testSampleProm() {
 
 //use .then to handle the resolve and .catch to handle the reject
 
-testSampleProm
+testSampleProm().then(function(res){
+    console.log(res)
+}).catch(function(err){
+    console.log(err);
+})
+
+
+
+
+// test().then(function (res){
+//     console.log(res);
+// })
+
+
+
+// //eg
+// async function test() {
+//     return new Promise((resolve, reject) => {
+//         resolve('hello world');
+//     })
+// }
+
+
+//any normal function is turned to a promise if you append with async
+async function testRejected(){
+    throw new Error('REJECTED!');
+}
+
+
+
+//call the testRejected function without using a promise
+//IIFE
+(async function () {
+    try{
+         const res = await testRejected(); 
+         console.log(res)
+        }catch(err){
+    }
+     console.log(err.message); 
+  })
+
+
+  // constructors and prototypes
+  //how to create an object with a constructor?
+  
+  let object = {
+        name: 'setemi',
+        age: 25
+  }
