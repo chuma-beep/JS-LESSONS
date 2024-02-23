@@ -3,7 +3,7 @@
 //.then() and .catch() is how you call a promise and also the .finally
 //try and catch can be used without the await. can be use for error handling i.e try the situuation catchthe error
 //check out the null coalecsing operator
-
+//Note that a constructor is used to construct an object
 
 
 
@@ -137,8 +137,8 @@ function Person(){
 }
 
 //constructors
-const setemi = Person('oluwasetemi')
-console.log(setemi)
+const wisdom = Person('wisdom')
+console.log(wisdom)
 
 //Classes
 class Person2{
@@ -147,6 +147,29 @@ class Person2{
     }
 }
 
+const wisdom2 = new Person('Wisdom')
+console.log(wisdom2)
 
-sayTheTruth()
+let az = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+//new Array(1, 2,3 3, 4, 5, 6, 7, 8, 9)//this happens here behind the scenes in your compiler
+console.log(typeof az)
+let str1 = 'wisdom' // literal
+//new String('wisdom')//this happens here behind the scenes in your compiler 
+console.log(typeof str1)
+str1.charAt() //converts to a proper string under the hood
+
+
+let num = 20
+//new Number(28)
+num.toFixed(2)
+
+let bool = true
+//new Boolean(true)
+let obj2 = {
+  name: 'wisdom',
+  age: 20,
+}
+
+//new Object({name: 'wisdom', age: 20})
+
 
