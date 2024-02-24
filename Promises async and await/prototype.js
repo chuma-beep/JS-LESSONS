@@ -5,6 +5,7 @@ String.prototype.altSchool = function(){
 }
 let name = 'wisdom' //literal 1 - use constructor to construct a new varaile, 
                     //2- converts the constructor object to a primitive data type
+                    //attach properties and methods to the new primitive data type
 console.log(typeof name)
 
 console.log(name.altSchool()) 
