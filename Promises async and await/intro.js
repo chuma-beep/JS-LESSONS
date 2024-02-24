@@ -86,3 +86,6 @@ Promise.all([
 ]).then((messages) => {
     console.log(messages);
 })
+//this will log all the messages at the same time
+//note that there's also a Promise.race
+//which when used will only return the first promise that resolves or rejects
