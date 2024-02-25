@@ -1,0 +1,15 @@
+{
+  "name": "js-lessons",
+  "version": "1.0.0",
+  "description": "<h1>JS \"Musings\"</h1>  I am going to be updating this repo with some of the thing I learn in JS. I'm currently working through Eloquent JS so most of the challenges are from there.",
+  "main": "play.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.7"
+  }
+}
