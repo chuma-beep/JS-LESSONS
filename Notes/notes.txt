@@ -1,1 +1,13 @@
 notes on promise......
+
+
+when you want install npm globally you have to passs location to globall 
+e.g. 
+'npm install cowsay --locationglobal'
+
+at some point youll use bundlers
+    1. vite
+    2. webpack 
+    3. turbo pack
+    4. esbuild
+    5. Rollup
