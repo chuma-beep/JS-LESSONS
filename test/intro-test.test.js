@@ -1,9 +1,5 @@
 //const {test, describe, expect} = require('jest/globals')
 
-
-
-
-
 //Unit test,  integartion test, jest, vitest - other(mochai, jasmine), end to end test - E2E, cypress, selenium,
 // puppeteer, playwright 
 //TDD - Test Driven Development
@@ -34,6 +30,22 @@ console.log(add(2, 3));
 //   }
 // } );
 
+//write your own expect
+function expect(actual){
+  return {
+    toBe:(expected) => {
+      if (actual !== expected){
+         throw new Error(`Expected ${expected} but got ${actual}`)
+      }
+      toEqual:(expected) => {
+        if (actual !== expected){
+           throw new Error(`Expected ${expected} but got ${actual}`)
+        }
+    }
+  }
+}
+}
+
 
 function test(title, callback){
     try{
@@ -50,16 +62,15 @@ function test(title, callback){
 
 describe('add', () => {
     test('It should add two numbers', () => {
-      const result = add(3, 7);
-      const expected = 10;
-    
-    
+     const obj = {a: 1, b:2}
       //assertion library
-      expect(result).toBe(10);
-
+      expect(obj).toHave(2)
     })
-    test.only('only 2 numbers are allowed', () => {
-      expect(() => add(3, '7')).toThrow('a and b must be numbers');
-    })
-  })
 
+})
+
+    //     test.only('only 2 numbers are allowed', () => {
+//       expect(() => add(3, '7')).toThrow('a and b must be numbers');
+//     })
+//   })
+// }
