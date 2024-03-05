@@ -11,3 +11,6 @@ at some point youll use bundlers
     3. turbo pack
     4. esbuild
     5. Rollup
+
+
+* check out the comma operator
