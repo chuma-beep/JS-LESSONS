@@ -14,3 +14,16 @@ at some point youll use bundlers
 
 
 * check out the comma operator
+* check out charcter data 
+
+body inherit from html interface
+html inherits from element itself
+element inherits from node
+node inherits from eventtarget
+eventtarget inherts from object
+
+
+//how to get atrribute of a particular element in html
+
+
+
