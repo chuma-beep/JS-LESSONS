@@ -104,7 +104,6 @@ app.append(newDiv)
 //allow us to insert new elements into the DOM
 // allow us to inseert(text, element, comment)
 // div.before(newDiv)
-
 // div.prepend(newDiv)
 // div.append(newDiv)
 // div.after(newDiv)
@@ -114,4 +113,35 @@ app.append(newDiv)
 //what is a unique way to really have your own attribute?
 //data-hypen?
 
-//insertAdjacentElement
+//insertAdjacentElement/Text/Element(position, element)
+// position - beforebegin, afterbegin, beforeend, afterend
+
+// app.insertAdjacentElement('beforebegin', '<div>beforebegin</div>')
+// app.insertAdjacentElement('afterbegin', '<div>afterbegin</div>')
+
+//remove()
+
+//cloneNode()
+
+//replaceChild()
+
+
+//DocumentFragment
+const ul = document.createElement('ul')
+
+function getListContent(){
+  const fragment = new DocumentFragment() 
+
+  for (let i = 1; i <= 10; i++) {
+    const li = document.createElement('li')
+    li.textContent = `List item ${i}`
+    fragment.append(li)
+  }
+
+  return fragment
+}
+
+//ul.innerHTML = getListContent()
+ul.prepend(getListContent('li'))
+
+app.append(ul)
