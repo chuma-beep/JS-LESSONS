@@ -14,7 +14,7 @@ at some point youll use bundlers
 
 
 * check out the comma operator
-* check out charcter data 
+* check out charater data 
 
 body inherit from html interface
 html inherits from element itself
@@ -25,5 +25,4 @@ eventtarget inherts from object
 
 //how to get atrribute of a particular element in html
 
-
-
+ 

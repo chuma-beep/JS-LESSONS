@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events</title>
+</head>
+<body>
+    <h2 id="title"> Bubbling vs capturing  </h2>
+
+    <p id="parent">
+
+        Lorem, <strong id="child">ipsum</strong> dolor sit amet consectetur adipisicing elit. Sapiente, ipsam blanditiis? Saepe dolores iure explicabo molestias veniam expedita autem, maxime laboriosam voluptas eligendi quibusdam repudiandae nam pariatur consequuntur rerum sit?
+
+      
+    </p>
+
+    <script type="text/javascript">
+   const parent = document.getElementById("parent");
+   const child =    document.getElementById("child");
+
+   parent.addEventListener("click", function (){
+    console.log("I am the PARENT. ");
+   });
+
+   child.addEventListener("click", function (){
+    console.log("I am the CHILD.")
+   })
+
+
+    </script>
+</body>
+</html>
