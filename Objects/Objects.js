@@ -190,19 +190,101 @@
 // }
 
 
-let group = Group.from([10, 20])
-console.log(group.has(10))
-// → true
-console.log(group.has(30))
-// → false
-group.add(10)
-group.delete(10)
-console.log(group.has(10))
-// → false
+// let group = Group.from([10, 20])
+// console.log(group.has(10))
+// // → true
+// console.log(group.has(30))
+// // → false
+// group.add(10)
+// group.delete(10)
+// console.log(group.has(10))
+// // → false
 
 
 
 
+// function displayPerson({ name, age }) {
+//     console.log(`Name: ${name}`);
+//     console.log(`Age: ${age}`);
+
+// }
+// const person = {
+//     name: "John",
+//     age: 25
+// };
+
+// console.log(displayPerson(person));
+
+//funtion to sum a range of numbers
+//sum should acept negative step values
+
+// let arr = []
+// const sum = (arr) =>{
+//   for (let i = 0; i < arr.length, i++;){
+//     arr.push[i]
+//   }
+
+// }
+
+//range to return an array of numbers from start to end
+//should accept a third arguement that indicates the step value
+const range = (start, end) =>{
+  let arr = [];
+  for (let i = start; i <= end; i++){
+    arr.push[i]
+  
+}
+
+console.log(sum(range(1, 10)));
+
+sum(range(1, 10));
+
+
+//reverse an array
+let output = []
+const reverseArray = (array) => {
+  for (let i = array.length; i > 0; i--){
+    output.push(array[i])
+  }
+  return output;
+}
+
+console.log(reverseArray([1, 2, 3, 4, 5, 6, 7, 8]))
+
+
+
+// function journalEvents(journal) {
+//   let events = [];
+//   for (let entry of journal) {
+//     for (let event of entry.events) {
+//       if (!events.includes(event)) {
+//         events.push(event);
+//       }
+//     }
+//   }
+//   return events;
+// }
+
+// console.log(journalEvents(JOURNAL));
+// // → ["carrot", "exercise", "weekend", "bread", …]
+
+
+
+//rthis show's an error `JOURNAL IS NOT DEFINED` 
+
+// function tableFor(event, journal) {
+//   let table = [0, 0, 0, 9];
+//   for (let i = 0; i < journal.length; i++) {
+//     let entry = journal[i], index = 0;
+//     if (entry.events.includes(event)) index += 1;
+//     if (entry.squirrel) index += 2;
+//     table[index] += 1;
+//   }
+//   return table;
+// }
+
+// console.log(tableFor("pizza", JOURNAL));
+// // → [76, 9, 4, 1]
 
 
 

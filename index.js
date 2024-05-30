@@ -1,4 +1,4 @@
-// const math = require('./math')
+  / const math = require('./math')
 // const math = require('./math')
 // const  cowsay = require('cowsay')
 
@@ -25,9 +25,21 @@
 
 
 
-console.log('from index.js')
-import math, { PI } from './math.js'
+// console.log('from index.js')
+// import math, { PI } from './math.js'
 
-console.log(math.add)
-console.log(math.sub)
-console.log(PI)
+// console.log(math.add)
+// console.log(math.sub)
+// console.log(PI)
+
+
+
+let arr = [1, 2, 3, 4, 5];
+
+// if (arr.length < 10) {
+//     console.log("The length of the array is less than 10.");
+// } else {
+//     console.log("The length of the array is 10 or greater.");
+// }
+
+for()
